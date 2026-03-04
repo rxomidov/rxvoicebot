@@ -1,0 +1,30 @@
+{
+  "name": "telegram-voice-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot for sending voice messages with categories",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "nodemon bot.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "voice",
+    "uzbek"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.66.0",
+    "dotenv": "^16.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
