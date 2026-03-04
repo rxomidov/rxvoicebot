@@ -63,6 +63,18 @@ const voiceCategories = {
         description: 'good_bad_and_ugly',
         file_id: null
       },
+      robertb: { 
+        name: 'Directed by Robert B', 
+        file: './voices/emotions/robertb.mp3',
+        description: 'robertb',
+        file_id: null
+      },
+      dexter: { 
+        name: 'Dexter Theme', 
+        file: './voices/emotions/dexter.mp3',
+        description: 'dexter',
+        file_id: null
+      },
     }
   },
   memesounds: {
