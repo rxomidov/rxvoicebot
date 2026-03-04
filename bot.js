@@ -3,7 +3,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const fs = require('fs');
 const path = require('path');
 
-const TOKEN = process.env.BOT_TOKEN || 'YOUR_BOT_TOKEN_HERE';
+const TOKEN = process.env.BOT_TOKEN;
 const bot = new TelegramBot(TOKEN, { polling: true });
 
 // Voice categories with descriptions added
@@ -57,18 +57,42 @@ const voiceCategories = {
         description: 'Fahhhhh',
         file_id: null
       },
-      emotionalDamage: { 
+      emotionaldamage: { 
         name: 'Emotional Damage', 
-        file: './voices/emotions/emotionalDamage.mp3',
+        file: './voices/emotions/emotionaldamage.mp3',
         description: 'Emotional Damage',
         file_id: null
       },
-      zor: { 
+      goodbadandugly: { 
         name: 'Good, bad and ugly', 
         file: './voices/emotions/good_bad_and_ugly.mp3',
         description: 'good_bad_and_ugly',
         file_id: null
-      }
+      },
+      thegodfather: { 
+        name: 'The Godfather', 
+        file: './voices/emotions/the_godfather.mp3',
+        description: 'the_godfather',
+        file_id: null
+      },
+      instagramthud: { 
+        name: 'Instagram Thud', 
+        file: './voices/emotions/instagramthud.mp3',
+        description: 'instagramthud',
+        file_id: null
+      },
+      spidermanmeme: { 
+        name: 'Spider-Man Meme', 
+        file: './voices/emotions/spidermanmeme.mp3',
+        description: 'spidermanmeme',
+        file_id: null
+      },
+      catlaughmeme: { 
+        name: 'Cat Laugh Meme', 
+        file: './voices/emotions/catlaughmeme.mp3',
+        description: 'catlaughmeme',
+        file_id: null
+      },
     }
   }
 };
