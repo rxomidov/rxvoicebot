@@ -411,7 +411,7 @@ function createInlineResult(key, voice) {
       id: key,
       voice_file_id: voice.file_id,
       title: voice.name || 'Ovoz',
-      caption: `🎤 ${voice.name || 'Ovoz'}`
+      caption: `${voice.name || 'Ovoz'}`
     };
   }
   
