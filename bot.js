@@ -48,8 +48,25 @@ const voiceCategories = {
 //       }
 //     }
 //   },
-  emotions: {
-    name: '😊 Hissiyotlar',
+  musicsounds: {
+    name: '🎵 Music Sounds',
+    voices: {
+      thegodfather: { 
+        name: 'The Godfather', 
+        file: './voices/emotions/the_godfather.mp3',
+        description: 'the_godfather',
+        file_id: null
+      },
+      goodbadandugly: { 
+        name: 'Good, bad and ugly', 
+        file: './voices/emotions/good_bad_and_ugly.mp3',
+        description: 'good_bad_and_ugly',
+        file_id: null
+      },
+    }
+  },
+  memesounds: {
+    name: '😊 Meme Sounds',
     voices: {
       fahhhhh: { 
         name: 'Fahhhhh', 
@@ -61,18 +78,6 @@ const voiceCategories = {
         name: 'Emotional Damage', 
         file: './voices/emotions/emotionaldamage.mp3',
         description: 'Emotional Damage',
-        file_id: null
-      },
-      goodbadandugly: { 
-        name: 'Good, bad and ugly', 
-        file: './voices/emotions/good_bad_and_ugly.mp3',
-        description: 'good_bad_and_ugly',
-        file_id: null
-      },
-      thegodfather: { 
-        name: 'The Godfather', 
-        file: './voices/emotions/the_godfather.mp3',
-        description: 'the_godfather',
         file_id: null
       },
       instagramthud: { 
