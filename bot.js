@@ -6,6 +6,144 @@ const path = require('path');
 const TOKEN = process.env.BOT_TOKEN;
 const bot = new TelegramBot(TOKEN, { polling: true });
 
+// Voice categories with descriptions added
+const voiceCategories = {
+//   greetings: {
+//     name: '👋 Salomlar',
+//     voices: {
+//       salom: { 
+//         name: 'Salom', 
+//         file: './voices/greetings/salom.ogg',
+//         description: 'Salom aytish',
+//         file_id: null
+//       },
+//       xayr: { 
+//         name: 'Xayr', 
+//         file: './voices/greetings/xayr.ogg',
+//         description: 'Xayrlashuv',
+//         file_id: null
+//       },
+//       assalomu: { 
+//         name: 'Assalomu alaykum', 
+//         file: './voices/greetings/assalomu.ogg',
+//         description: 'Islomiy salom',
+//         file_id: null
+//       }
+//     }
+//   },
+//   thanks: {
+//     name: '🙏 Minnatdorchilik',
+//     voices: {
+//       rahmat: { 
+//         name: 'Rahmat', 
+//         file: './voices/thanks/rahmat.ogg',
+//         description: 'Minnatdorchilik',
+//         file_id: null
+//       },
+//       tashakkur: { 
+//         name: 'Tashakkur', 
+//         file: './voices/thanks/tashakkur.ogg',
+//         description: 'Rasmiy rahmat',
+//         file_id: null
+//       }
+//     }
+//   },
+  musicsounds: {
+    name: '🎵 Music Sounds',
+    voices: {
+      thegodfather: { 
+        name: 'The Godfather', 
+        file: './voices/emotions/the_godfather.mp3',
+        description: 'the_godfather',
+        file_id: null
+      },
+      goodbadandugly: { 
+        name: 'Good, bad and ugly', 
+        file: './voices/emotions/good_bad_and_ugly.mp3',
+        description: 'good_bad_and_ugly',
+        file_id: null
+      },
+      robertb: { 
+        name: 'Directed by Robert B', 
+        file: './voices/emotions/robertb.mp3',
+        description: 'robertb',
+        file_id: null
+      },
+      dexter: { 
+        name: 'Dexter Theme', 
+        file: './voices/emotions/dexter.mp3',
+        description: 'dexter',
+        file_id: null
+      },
+      snoppDog: { 
+        name: 'Snopp Dog', 
+        file: './voices/emotions/snoppdog.mp3',
+        description: 'snoppdog',
+        file_id: null
+      },
+      putin: { 
+        name: 'Putin', 
+        file: './voices/emotions/putin.mp3',
+        description: 'putin',
+        file_id: null
+      },
+    }
+  },
+  memesounds: {
+    name: '😊 Meme Sounds',
+    voices: {
+      fahhhhh: { 
+        name: 'Fahhhhh', 
+        file: './voices/emotions/fahhhhh.mp3',
+        description: 'Fahhhhh',
+        file_id: null
+      },
+      emotionaldamage: { 
+        name: 'Emotional Damage', 
+        file: './voices/emotions/emotionaldamage.mp3',
+        description: 'Emotional Damage',
+        file_id: null
+      },
+      instagramthud: { 
+        name: 'Instagram Thud', 
+        file: './voices/emotions/instagramthud.mp3',
+        description: 'instagramthud',
+        file_id: null
+      },
+      spidermanmeme: { 
+        name: 'Spider-Man Meme', 
+        file: './voices/emotions/spidermanmeme.mp3',
+        description: 'spidermanmeme',
+        file_id: null
+      },
+      catlaughmeme: { 
+        name: 'Cat Laugh Meme', 
+        file: './voices/emotions/catlaughmeme.mp3',
+        description: 'catlaughmeme',
+        file_id: null
+      },
+      loading: { 
+        name: 'Loading', 
+        file: './voices/emotions/loading.mp3',
+        description: 'loading',
+        file_id: null
+      },
+      sadviolin: { 
+        name: 'Sad Violin', 
+        file: './voices/emotions/sadviolin.mp3',
+        description: 'sadviolin',
+        file_id: null
+      },
+      sad_hamster: { 
+        name: 'Sad Hamster', 
+        file: './voices/emotions/sad_hamster.mp3',
+        description: 'sad_hamster',
+        file_id: null
+      },
+    }
+  }
+};
+
 // User statistics
 const userStats = {};
 
