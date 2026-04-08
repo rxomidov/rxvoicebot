@@ -219,6 +219,18 @@ const voiceCategories = {
         description: 'dexter',
         file_id: null
       },
+      snoppDog: { 
+        name: 'Snopp Dog', 
+        file: './voices/emotions/snoppdog.mp3',
+        description: 'snoppdog',
+        file_id: null
+      },
+      putin: { 
+        name: 'Putin', 
+        file: './voices/emotions/putin.mp3',
+        description: 'putin',
+        file_id: null
+      },
     }
   },
   memesounds: {
@@ -252,6 +264,18 @@ const voiceCategories = {
         name: 'Cat Laugh Meme', 
         file: './voices/emotions/catlaughmeme.mp3',
         description: 'catlaughmeme',
+        file_id: null
+      },
+      sadviolin: { 
+        name: 'Sad Violin', 
+        file: './voices/emotions/sadviolin.mp3',
+        description: 'sadviolin',
+        file_id: null
+      },
+      sad_hamster: { 
+        name: 'Sad Hamster', 
+        file: './voices/emotions/sad_hamster.mp3',
+        description: 'sad_hamster',
         file_id: null
       },
     }
